@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Spirax&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  max-width: 100%;
+}
+body {
+  background-image: linear-gradient(to right, black, #001f7a);
+  color: #bababa;
+  font-family: "Oswald", sans-serif "Poppins", sans-serif;
+  font-size: 16pt;
+}
+header {
+  margin: 25px 0 25px 0;
+  text-align: center;
+}
+main {
+  margin-top: 150px;
+  text-align: center;
+  margin: 15px;
+}
+h1 {
+  color: #c65600;
+}
+h2 {
+  margin-bottom: 20px;
+  text-align: left;
+  color: rgb(198, 86, 0);
+}
+p {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.center_p {
+  text-align: center;
+}
+.detailsbutton {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.nextlaunch {
+  text-align: center;
+  margin-top: 20px;
+}
+.launchcard {
+  box-shadow: 5px rgb(249, 168, 106);
+  border: solid #4270fa;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 50px auto 50px auto;
+  width: 65%;
+  font-size: 20pt;
+}
+.launchcard p {
+  text-align: center;
+}
+
+.launchcard a {
+  padding: 1.5px 4px 1.5px 4px;
+  background-color: #4270fa;
+  border-radius: 15px;
+  text-decoration: none;
+  color: azure;
+}
+.launchcard a:hover {
+  background-color: azure;
+  color: #688cfa;
+}
+.alllaunches {
+  padding: 1.5px 4px 1.5px 4px;
+  background-color: #4270fa;
+  border-radius: 15px;
+  text-decoration: none;
+  color: azure;
+}
+.alllaunches:hover {
+  background-color: azure;
+  color: #688cfa;
+}
+.muskquote {
+  font-family: "Lora", serif, "Spirax", cursive;
+}
+footer {
+  height: auto;
+  border-top: solid azure;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+address {
+  flex: 1;
+  padding-left: 20px;
+}
+address p {
+  font-size: 15pt;
+  margin-top: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: azure;
+}
+.footerdevide {
+  display: flex;
+}
+.quicklinks {
+  flex: 1;
+}
+.quicklinks ul {
+  margin: 20px 40px 0 0;
+  list-style: none;
+}
+.fab {
+  font-size: 20px;
+  margin: 0 10px 10px 0;
+}
+li {
+  margin: 0 10px 10px 0;
+}
+a:hover {
+  color: #688cfa;
+}
+.linkcontactform {
+  padding: 1.5px 4px 1.5px 4px;
+  background-color: #4270fa;
+  border-radius: 15px;
+}
+.linkcontactform:hover {
+  background-color: azure;
+  color: #688cfa;
+}
+.error {
+  width: 40%;
+  color: red;
+  border-style: ridge;
+  border-color: azure;
+  text-align: center;
+}
+
+/*Contact form*/
+
+.formError {
+  display: none;
+  color: red;
+}
+
+.contactform {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.contactheader {
+  margin: 20px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14pt;
+  border-radius: 5px;
+  resize: vertical;
+  margin: 5px 0 5px 0;
+}
+input[type="submit"] {
+  color: #fafafa;
+  background-color: #688cfa;
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 20px;
+}
+input[type="reset"] {
+  color: #fafafa;
+  background-color: #688cfa;
+  border-radius: 5px;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #4270fa;
+}
+input[type="reset"]:hover {
+  background-color: #ffffff;
+  color: #4270fa;
+}
+.fa-arrow-circle-left {
+  font-size: 50px;
+  color: #688cfa;
+}
+.backbutton {
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.backbutton i:hover {
+  color: #ffffff;
+}
+#validForm {
+  display: block;
+}
+
+/*Details page*/
+
+.detailscard {
+  display: block;
+  box-shadow: 5px rgb(249, 168, 106);
+  border: solid #4270fa;
+  border-radius: 25px;
+  margin: 60px auto 60px auto;
+  width: 100%;
+  font-size: 20pt;
+}
+.detailscard p {
+  text-align: center;
+}
+.fontdetails {
+  font-size: 20pt;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 50%;
+    margin: auto;
+  }
+  .center_p {
+    width: 40%;
+    margin: auto;
+  }
+
+  .spaceimg {
+    margin: 30px 0px 30px 0px;
+  }
+  .contactform {
+    width: 50%;
+  }
+  .allupcoming {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+  }
+}

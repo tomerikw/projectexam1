@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A microsite for SpaceX to raise awareness about space program activity around the world. Learn More"
+    />
+    <meta
+      name="keywords"
+      content="spacex, rockets, launch, spaceprogram, microsite"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <h1 class="contactheader">Contact Us</h1>
+    <div class="contactform">
+      <form id="form" action="formsent.php">
+        <label for="firstname">First Name:</label>
+        <div class="formError" id="firstNameError">
+          Please type in your first name
+        </div>
+        <input
+          type="text"
+          id="firstName"
+          name="firstname"
+          placeholder="Type your first name..."
+        />
+        <label for="lastname">Last Name:</label>
+        <div class="formError" id="lastNameError">
+          Please type in your last name
+        </div>
+        <input
+          type="text"
+          id="lastName"
+          name="lastname"
+          placeholder="Type your last name..."
+        />
+        <label for="email">E-Mail</label>
+        <div class="formError" id="emailError">Please type in your E-mail</div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Type in your E-Mail..."
+        />
+        <label for="textarea">Subject</label>
+        <div class="formError" id="noSubjectError">
+          Please type in your subject
+        </div>
+        <textarea
+          name="textarea"
+          id="textArea"
+          cols="30"
+          rows="10"
+          placeholder="Type in your question..."
+        ></textarea>
+        <input id="submitButton" type="submit" value="Submit" />
+        <input id="reset" type="reset" value="Reset" />
+        <p id="validForm"></p>
+      </form>
+    </div>
+    <footer>
+      <div class="footerdevide">
+        <address>
+          <h3>Contact</h3>
+          <p>E-Mail</p>
+          <a href="mailto:contact@launchsite.com">contact@launchsite.com</a>
+          <p>Phone</p>
+          <a href="tel:73511276">73511276</a>
+        </address>
+        <div class="quicklinks">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <i class="fab fa-twitter-square"></i
+              ><a href="https://twitter.com/spacex">SpaceX</a>
+            </li>
+            <li>
+              <i class="fab fa-youtube-square"></i
+              ><a
+                href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
+                >SpaceX</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-facebook-square"></i
+              ><a href="https://www.facebook.com/spacenewsx/">SpaceX</a>
+            </li>
+            <li>
+              <i class="fab fa-instagram-square"></i
+              ><a href="https://www.instagram.com/spacex/">SpaceX</a>
+            </li>
+            <li>
+              <a href="spacex.com">SpaceX - Homepage</a>
+            </li>
+            <li>
+              <a href="nasa.gov">NASA - Homepage</a>
+            </li>
+            <li>
+              <a href="https://spaceflightnow.com">Space Flight Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backbutton">
+      <a href="index.html">
+        <i class="fas fa-arrow-circle-left"></i>
+      </a>
+    </div>
+    <script src="js/form.js"></script>
+  </body>
+</html>
